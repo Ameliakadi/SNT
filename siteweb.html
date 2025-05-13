@@ -1,35 +1,92 @@
-<html lang="fr"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Un cours de SNT random</title>
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cours SNT - Kadi Amélia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #FFFFFF;
+    }
+    header {
+      background-color: #FF7F50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 80px;
+      vertical-align: middle;
+    }
+    nav {
+      background: #e0eafc;
+      padding: 20px;
+      max-width: 300px;
+      float: left;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #005a9c;
+      text-decoration: none;
+    }
+    main {
+      margin-left: 320px;
+      padding: 20px;
+    }
+    section {
+      display: none;
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      clear: both;
+      text-align: center;
+      background: #ddd;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-<h1> <strong> Bienvenue sur mon site, je suis Amélia KADI </strong> </h1>
-<p> <strong> Je vais vous parler de ma passion de SNT :) </strong> </p>
-<p>
-<img src="SNT.jpg" align="middle">
-</p>
-<br>
-<br>
-<p> La SNT (Sciences Numériques et Technologiques) est une matière qui ne se présente aux élèves qu'en classe de Seconde. Elle englobe plusieurs chapitres à propos de programmation (Python...) ainsi que certains thèmes concernant des objets et systèmes informatiques du quotidien, tels que les réseaux sociaux ou la création de sites web.
-<br>
-<h2> NAVIGATION RAPIDE </h2>
-<p>
-<a href="#programmationpython">Programmation Python</a> <br>
-<a href="#donneesstructurees">Données Structurées</a> <br>
-<a href="#lesreseauxsociaux">Les Réseaux Sociaux</a> <br>
-<a href="#informatiqueembarquee">Informatique Embarquée &amp; Objets Connectés</a> <br>
-<a href="#photonumerique">Photographie Numérique</a> <br>
-<a href="#localisation">Localisation</a> <br>
-<a href="#cartographie">Cartographie</a> <br>
-<a href="#internetweb">Internet &amp; Web</a> <br>
-<br>
-<br>
-<h3> <strong><em> Programmation Python</em></strong>
-</h3><h3 id="programmationpython"> </h3>
-<br>
-La programmation en Python sert à donner des instructions à un ordinateur pour qu’il réalise des tâches.
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Sciences_num%C3%A9riques_et_technologie_-_Logo.png" alt="Logo SNT" />
+  <h1>Site SNT de Hadi Lamari</h1>
+  <p>Sciences Numériques et Technologie</p>
+</header>
+
+<nav>
+  <a href="#" onclick="showSection('internet')">🌐 Représentation d'Internet</a>
+  <a href="#" onclick="showSection('python')">💻 Programmation Python</a>
+  <a href="#" onclick="showSection('donnees')">📊 Données structurées</a>
+  <a href="#" onclick="showSection('reseaux')">📱 Réseaux sociaux</a>
+  <a href="#" onclick="showSection('objets')">📡 Objets connectés</a>
+  <a href="#" onclick="showSection('photo')">📷 Photographie numérique</a>
+  <a href="#" onclick="showSection('localisation')">📍 Localisation</a>
+  <a href="#" onclick="showSection('carte')">🗺️ Cartographie</a>
+  <a href="#" onclick="showSection('web')">🌐 Internet et Web</a>
+</nav>
+
+<main>
+  <section id="internet" class="active">
+    <h2>Représentation d'Internet</h2>
+    <p>Internet est un réseau mondial d’ordinateurs connectés entre eux. On y utilise des adresses IP, des routeurs, des serveurs, etc.</p>
+  </section>
+
+  <section id="python">
+    <h2>Programmation Python</h2>
+    <p>La programmation en Python sert à donner des instructions à un ordinateur pour qu’il réalise des tâches.
 C’est comme donner une recette très précise à une machine.
 <br>
 <br>
@@ -52,15 +109,12 @@ Programmer des jeux vidéo.
 Analyser des données scientifiques.
 <br>
 <br>
-Fun Fact : Python est nommé d’après les Monty Python, un groupe de comédiens britanniques !
-<br>
-<br>
-</be></p2>
-<h3> <strong><em>Données Structurées</em></strong>
-<h4 id="donneesstructurees"> </h4>
-<br>
-<br>
-Les données structurées sont des informations bien organisées pour être facilement utilisées.
+Fun Fact : Python est nommé d’après les Monty Python, un groupe de comédiens britanniques !</p>
+  </section>
+
+  <section id="donnees">
+    <h2>Données structurées</h2>
+    <p>Les données structurées sont des informations bien organisées pour être facilement utilisées.
 <br>
 <br>
 Exemples :
@@ -77,13 +131,12 @@ Pourquoi c'est utile ?
 Si les données sont bien rangées, on peut rapidement trouver une information ou faire des calculs automatiques.
 <br>
 <br>
-Par exemple, pour savoir qui a eu la meilleure note dans la classe !
-<br>
-<br>
-<h3> <strong><em>Les Réseaux Sociaux</em></strong> </h3>
-<h3 id="lesreseauxsociaux"> </h3>
-<br>
-Les réseaux sociaux permettent aux gens de se connecter, de partager des photos, des vidéos et de discuter.
+Par exemple, pour savoir qui a eu la meilleure note dans la classe !</p>
+  </section>
+
+  <section id="reseaux">
+    <h2>Réseaux sociaux</h2>
+    <p>Les réseaux sociaux permettent aux gens de se connecter, de partager des photos, des vidéos et de discuter.
 <br>
 <br>
 Exemples :
@@ -106,13 +159,12 @@ Nous proposer du contenu.
 Nous afficher de la publicité ciblée.
 <br>
 <br>
-Conseil : toujours réfléchir avant de poster !
-<br>
-<br>
-<h3> <strong><em>Informatique Embarquée &amp; Objets Connectés</em></strong> </h3>
-<h3 id="informatiqueembarquee"> </h3>
-<br>
-L’informatique embarquée, c’est quand un ordinateur est intégré dans un objet du quotidien.
+Conseil : toujours réfléchir avant de poster !</p>
+  </section>
+
+  <section id="objets">
+    <h2>Objets connectés</h2>
+    <p>L’informatique embarquée, c’est quand un ordinateur est intégré dans un objet du quotidien.
 <br>
 <br>
 Exemples :
@@ -127,14 +179,12 @@ Une voiture avec GPS intégré.
 Une caméra de sécurité connectée à ton téléphone.
 <br>
 <br>
-Objets connectés : Ils peuvent communiquer entre eux via Internet (par exemple : Alexa ou Google Home).
-<br>
-<br>
-<h3> <strong><em>Photographie Numérique</em></strong> </h3>
-<h3 id="photonumerique"> </h3>
-<br>
-<br>
-La photographie numérique transforme la lumière en données numériques.
+Objets connectés : Ils peuvent communiquer entre eux via Internet (par exemple : Alexa ou Google Home).</p>
+  </section>
+
+  <section id="photo">
+    <h2>Photographie numérique</h2>
+    <p>La photographie numérique transforme la lumière en données numériques.
 <br>
 <br>
 Exemples de formats d’images :
@@ -157,13 +207,12 @@ Un capteur transforme la lumière en pixels (petits carrés de couleurs).
 L’image est sauvegardée sur une carte mémoire.
 <br>
 <br>
-Exemple amusant : Une photo de 12 mégapixels contient environ 12 millions de petits carrés !
-<br>
-<br>
-<h3> <strong><em>Localisation</em></strong> </h3>
-<h3 id="localisation"> </h3>
-<br>
-La localisation permet de connaître ta position sur Terre grâce aux satellites.
+Exemple amusant : Une photo de 12 mégapixels contient environ 12 millions de petits carrés !</p>
+  </section>
+
+  <section id="localisation">
+    <h2>Localisation</h2>
+    <p>La localisation permet de connaître ta position sur Terre grâce aux satellites.
 <br>
 <br>
 Exemple :
@@ -187,13 +236,12 @@ Utilisation :
 Trouver une adresse.
 <br>
 <br>
-Partager ta position en temps réel.
-<br>
-<br>
-<h3>Cartographie</em></strong> </h3>
-<h3 id="cartographie"> </h3>
-<br>
-La cartographie est l’art de créer des cartes géographiques.
+Partager ta position en temps réel.</p>
+  </section>
+
+  <section id="carte">
+    <h2>Cartographie</h2>
+    <p>La cartographie est l’art de créer des cartes géographiques.
 <br>
 <br>
 Exemples de cartes modernes :
@@ -214,13 +262,12 @@ Mesurer des distances.
 Ajouter des informations en direct (trafic, restaurants, etc.).
 <br>
 <br>
-Anecdote : Avant, les cartes étaient dessinées à la main et pouvaient contenir beaucoup d’erreurs !
-<br>
-<br>
-<h3> <strong><em>Internet &amp; Web</em></strong> </h3>
-<h3 id="internetweb"> </h3>
-<br>
-Internet est le réseau qui relie les ordinateurs entre eux.
+Anecdote : Avant, les cartes étaient dessinées à la main et pouvaient contenir beaucoup d’erreurs !</p>
+  </section>
+
+  <section id="web">
+    <h2>Internet et Web</h2>
+    <p>Internet est le réseau qui relie les ordinateurs entre eux.
 Le Web est un service d’Internet qui permet d’accéder à des sites.
 <br>
 <br>
@@ -254,11 +301,22 @@ Différence simple :
 Internet = autoroute.
 <br>
 <br>
-Web = voitures qui roulent dessus !
-<br>
-<br>
-<br>
-<br>
- <p>Pour plus d'informations, <a href="https://eduscol.education.fr/sti/ressources-snt" target="_blank">clique ici</a>.</p>
+Web = voitures qui roulent dessus !</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Kadi Amélia | Site SNT - Tous droits réservés.</p>
+</footer>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
 </body>
 </html>
